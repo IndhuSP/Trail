@@ -19,6 +19,7 @@ import { UserstoriesComponent } from './userstories/userstories.component';
 import {MatPaginatorModule} from '@angular/material/paginator';
 
 import { MatTableDataSource} from '@angular/material';
+import { ExecutionComponent } from './execution/execution.component';
 
 
 const routes: Routes = [
@@ -51,6 +52,11 @@ const routes: Routes = [
         component: UserstoriesComponent,
         canActivate: [AuthGuard]
       },
+      {
+        path:'execution',
+        component:ExecutionComponent,
+        canActivate:[AuthGuard]
+      }
     ]
   },
 
@@ -66,6 +72,7 @@ const routes: Routes = [
       ConfigurationComponent,
       HomeComponent,
       UserstoriesComponent,
+      ExecutionComponent,
     ],
     imports:
     [

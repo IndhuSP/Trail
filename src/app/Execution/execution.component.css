@@ -1,0 +1,16 @@
+.mytext{
+    text-overflow: ellipsis;    
+ }
+
+ .button{
+    margin-top:27%;
+    display: flex;
+    justify-content: space-between;
+    width:70%;  
+    position: absolute;
+}
+.col{
+    border-style: solid;
+    border-color: rgb(0, 0, 0);
+    border-radius: 10px;
+}
