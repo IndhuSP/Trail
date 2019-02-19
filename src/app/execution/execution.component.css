@@ -1,45 +1,50 @@
 .mytext{
     text-overflow: ellipsis;    
- }
-
- .button{
+}
+.button{
     margin-top:27%;
     display: flex;
     justify-content: space-between;
     width:70%;  
     position: absolute;
 }
+.grid-1{
+    position: relative;
+    max-width: 60%;
+    margin-top:5%;
+    left:20%; 
+}
 .grid-2{
     position: relative;
-    max-width: 75%;
+   /*  max-width:80%;
+    border-style: solid;
+    border-color: rgba(16, 45, 126, 0.911);
+    border-radius: 7px; */
     margin-top:-15%;
     margin-left: auto;
     margin-right: auto;
-    border-style: solid;
-    border-color: rgb(112, 109, 109);
-    border-radius: 7px;
     align-items: center;
     background-color: white;
 }
 .main{
      margin-top: 10%;
      margin-bottom: 10%;
- }
- .h{
+}
+.h{
      background-color: rgb(18, 101, 156);
- }
-.grid-top {
-   position: relative;
-   max-width: 60%;
-   margin-top:5%;
-   left:20%; 
- }
- mat-card {
-    width:80%;
- }
-.grid-1{
-   position: relative;
-   max-width: 60%;
-   margin-top:5%;
-   left:20%; 
- }
+}
+mat-card {
+    max-width:70%;
+}
+mat-card-header{
+    background-color: rgba(16, 45, 126, 0.911);
+}
+mat-divider{
+    border-color: rgba(12, 8, 206, 0.575);
+}
+p{
+    color: white;
+    font-size: 25px;
+    font-weight: bold;
+    font-family: Arial;
+}

@@ -24,10 +24,17 @@
             </mat-card>
         </mat-grid-tile>
     </mat-grid-list>
+    <mat-card>
+    <mat-card-header>EXECUTION</mat-card-header>
+    <br>
+    <mat-divider></mat-divider>
+    <br>
+    <br>
+    <mat-card-content>
     <mat-grid-list class="grid-2" cols="6" rowHeight='88px' align="center" [cols]="breakpoint" (window:resize)="onResize($event)">
-        <mat-grid-tile  [colspan]="2" [rowspan]="1" class="h"><mat-grid-tile-header> EXECUTION </mat-grid-tile-header></mat-grid-tile>
-        <mat-grid-tile *ngIf="breakpoint==6" [colspan]="2" [rowspan]="1" class="h"><mat-grid-tile-header></mat-grid-tile-header></mat-grid-tile>
-        <mat-grid-tile *ngIf="breakpoint==6" [colspan]="2" [rowspan]="1" class="h"><mat-grid-tile-header></mat-grid-tile-header></mat-grid-tile>
+       <!--  <mat-grid-tile  [colspan]="2" [rowspan]="1"><mat-grid-tile-header><p>EXECUTION</p></mat-grid-tile-header></mat-grid-tile>
+        <mat-grid-tile *ngIf="breakpoint==6" [colspan]="2" [rowspan]="1"><mat-grid-tile-header></mat-grid-tile-header></mat-grid-tile>
+        <mat-grid-tile *ngIf="breakpoint==6" [colspan]="2" [rowspan]="1"><mat-grid-tile-header></mat-grid-tile-header></mat-grid-tile> -->
         <mat-grid-tile>Execution Name</mat-grid-tile>
         <mat-grid-tile>
             <mat-form-field appearance="outline" class="example-full-width">
@@ -84,5 +91,6 @@
             <button mat-raised-button color="primary" title="Hit the Generate Sequence Diagram Button after Parsing">Generate Sequence Diagram</button>
         </mat-grid-tile>
     </mat-grid-list>
-    
+</mat-card-content>  
+</mat-card>
 </div>
